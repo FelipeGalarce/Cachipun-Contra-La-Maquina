@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ca-Chi-Pun!</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5c57d3ff9a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/img/cachipun.png" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="text-center text-white fs-1 fw-bold titulo">Bienvenido Al Campeonate de Cachipun <br><hr class="border border-4 border-dark rounded-pill"></div>
+            <div class="row">
+                <div class="col-12 col-md-5 text-center mx-auto pt-2">
+                    <div class="fs-2 fw-bold text-white rounded titulo"><p>El Ser Humano<hr class="border border-4 border-dark rounded-pill"></p></div>
+                                        <!-- aca estan los botones, cada uno con tooltip y una id para el javascript -->
+                    <div class="boton" id="papel"><i class="far fa-hand-paper" data-bs-toggle="tooltip" data-bs-placement="top" title="Papel"></i></div>
+                    <div class="boton" id="piedra"><i class="far fa-hand-rock"  data-bs-toggle="tooltip" data-bs-placement="top" title="Piedra"></i></div>
+                    <div class="boton" id="tijera"><i class="far fa-hand-peace"  data-bs-toggle="tooltip" data-bs-placement="top" title="Tijera"></i></div>
+                </div>
+                <div class="col-12 col-md-2 mx-auto ">
+                    
+                    
+                        <!-- este es el marcador, tambien tiene una id para modificarlo desde el javascript -->
+                    <p id="marcador" class="mt-5 text-white text-center bg-dark border border-white rounded"><span id="marcadorHumano">0</span>:<span id="marcadorComputador">0</span></p>
+                    <br>
+                        <!-- esto es como para que entiendan que es cada color cuando cambian los botones  -->
+                    <p class="text-success fw-bold fs-4 text-center border border-white rounded bg-dark">Victoria</p><p class="text-danger fw-bold border border-white rounded fs-4 text-center bg-dark">Derrota</p><p class="text-white border border-white rounded fw-bold fs-4 text-center bg-dark">Empate</p>
+                    <p class="text-warning text-center bg-dark fs-1 fw-bold border border-white rounded">V/S</p>
+                </div>
+                <div class="col-12 col-md-5 text-center col-5 text-center mx-auto pt-2">
+                    <div class="fs-2 fw-bold text-white rounded titulo"><p>La Maquina <hr class="border border-4 border-dark rounded-pill"></p></div>
+                    <div><img src="assets/img/compu.jpg" alt=""></div>
+                </div>
+            </div>
+            <!-- este tiene la clase resultado solo para ser seleccionado por el javascript, no tiene css asociado -->
+            <div class="text-center border border-white rounded bg-dark text-white fs-1 fw-bold rounded resultado">Hola Hola</div>
+        </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
